@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista zakupów</title>
+</head>
+<body>
+    <h2>Dodaj produkt</h2>
+    <input type="text" id="nameInput" placeholder="Nazwa">
+    <input type="text" id="quantityInput" placeholder="Ilość">
+    <button id="addButton">Dodaj</button>
+    <div id="errorMessage" style="color: rgb(0, 255, 64);"></div>
+
+    <hr>
+
+    <select id="filterSelect">
+        <option value="all">wszystkie</option>
+        <option value="toBuy">do kupienia</option>
+        <option value="bought">zakupione</option>
+    </select>
+
+    <div id="listContainer"></div>
+    <div id="counter"></div>
+
+    <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
